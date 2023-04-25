@@ -1,8 +1,36 @@
 let characters = [
-    { name: "Batman", health: 50, xp: 5, weapon: getRandomCharacterPoints(1, 10), shield: getRandomCharacterPoints(1, 10) },
-    { name: "Pikachu", health: 50, xp: 5, weapon: getRandomCharacterPoints(1, 10), shield: getRandomCharacterPoints(1, 10) },
-    { name: "Jacques Chirac", health: 50, xp: 5, weapon: getRandomCharacterPoints(1, 10), shield: getRandomCharacterPoints(1, 10) },
-    { name: "Bob l'éponge", health: 50, xp: 5, weapon: getRandomCharacterPoints(1, 10), shield: getRandomCharacterPoints(1, 10) }
+    {
+        name: "Batman",
+        health: 50,
+        xp: 5,
+        weapon: getRandomCharacterPoints(1, 10),
+        shield: getRandomCharacterPoints(1, 10),
+        critique: "il appelle la Batmobile"
+    },
+    {
+        name: "Pikachu",
+        health: 50,
+        xp: 5,
+        weapon: getRandomCharacterPoints(1, 10),
+        shield: getRandomCharacterPoints(1, 10),
+        critique: "il invoque lance vive attaque"
+    },
+    {
+        name: "Jacques Chirac",
+        health: 50,
+        xp: 5,
+        weapon: getRandomCharacterPoints(1, 10),
+        shield: getRandomCharacterPoints(1, 10),
+        critique: "il invoque la république"
+    },
+    {
+        name: "Bob l'éponge",
+        health: 50,
+        xp: 5,
+        weapon: getRandomCharacterPoints(1, 10),
+        shield: getRandomCharacterPoints(1, 10),
+        critique: "il mange un Krusty Krab"
+    }
 ];
 
 function getRandomCharacterPoints(min, max) {
