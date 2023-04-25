@@ -63,6 +63,11 @@ function addLife(character, healthPoint) {
     return character.health = Math.min(character.health + healthPoint, maxHealthPoint);
 }
 
+// Give an XP point to a character
+function addXp(character) {
+    character.xp++;
+} 
+
 function combat(attacker, defender) {
     let attackScore = getAttackScore(attacker);
     let defenseScore = getDefenseScore(defender);
@@ -85,7 +90,7 @@ function combat(attacker, defender) {
         }
     } else {
         console.log(`${defender.name} arrive à se défendre ! +1xp (${defender.xp}xp)`)
-        defender.xp++;
+        addXp(defender);
     }
     return false;
 }
