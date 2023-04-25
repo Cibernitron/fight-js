@@ -5,7 +5,7 @@ let characters = [
         xp: 5,
         weapon: getRandomCharacterPoints(1, 10),
         shield: getRandomCharacterPoints(1, 10),
-        critique: "il appelle la Batmobile"
+        critique: "il appelle Robin"
     },
     {
         name: "Pikachu",
@@ -13,7 +13,7 @@ let characters = [
         xp: 5,
         weapon: getRandomCharacterPoints(1, 10),
         shield: getRandomCharacterPoints(1, 10),
-        critique: "il invoque lance vive attaque"
+        critique: "il appelle Sacha du BourgPalette"
     },
     {
         name: "Jacques Chirac",
@@ -21,7 +21,7 @@ let characters = [
         xp: 5,
         weapon: getRandomCharacterPoints(1, 10),
         shield: getRandomCharacterPoints(1, 10),
-        critique: "il invoque la république"
+        critique: "il chante la marseillaise"
     },
     {
         name: "Bob l'éponge",
