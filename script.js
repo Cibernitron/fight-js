@@ -2,7 +2,7 @@ let characters = [
     {
         name: "Batman",
         health: 50,
-        xp: 5,
+        xp: 8,
         weapon: getRandomCharacterPoints(1, 10),
         shield: getRandomCharacterPoints(1, 10),
         critique: "il appelle Robin"
