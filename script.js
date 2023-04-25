@@ -56,20 +56,25 @@ function getAttackScore(attacker) {
 function getDefenseScore(defender) {
     return defender.xp + getRandomCharacterPoints(0, defender.shield);
 }
+
+// Add health points to a character
+function addLife(character, healthPoint) {
+    const maxHealthPoint = 50;
+    return character.health = Math.min(character.health + healthPoint, maxHealthPoint);
+}
+
 function combat(attacker, defender) {
     let attackScore = getAttackScore(attacker);
     let defenseScore = getDefenseScore(defender);
 
     console.log(`${attacker.name} (${attackScore}) attaque ${defender.name} (${defenseScore}) !`);
     if (attackScore == 20) {
-        attacker.health = attacker.health + 10
+        addLife(attacker, 10);
         console.warn(`${attacker.name} à fait un jet parfait !! ${attacker.critique} et récupère 10 points de vie`)
-
     }
     if (defenseScore == 20) {
-        defender.health = defender.health + 10
+        addLife(defender, 10);
         console.warn(`${defender.name} à fait un jet parfait !! ${defender.critique} et récupère 10 points de vie`)
-
     }
     if (attackScore > defenseScore) {
         defender.health -= attackScore;
