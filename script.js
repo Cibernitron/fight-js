@@ -63,33 +63,13 @@ function combat(attacker, defender) {
     console.log(`${attacker.name} (${attackScore}) attaque ${defender.name} (${defenseScore}) !`);
     if (attackScore == 20) {
         attacker.health = attacker.health + 10
-        if (attacker == "Jacques Chirac") {
-            console.warn(`${attacker.name} à fait un jet parfait !! il invoque la république et récupère 10 points de vie`)
-        }
-        if (attacker == "Batman") {
-            console.warn(`${attacker.name} à fait un jet parfait !! il appelle la Batmobile et récupère 10 points de vie`)
-        }
-        if (attacker == "Pikachu") {
-            console.warn(`${attacker.name} à fait un jet parfait !! il invoque lance vive attaque et récupère 10 points de vie`)
-        }
-        if (attacker == "Bob l'éponge") {
-            console.warn(`${attacker.name} à fait un jet parfait !! il mange un Krusty Krab et récupère 10 points de vie`)
-        }
+        console.warn(`${attacker.name} à fait un jet parfait !! ${attacker.critique} et récupère 10 points de vie`)
+
     }
     if (defenseScore == 20) {
         defender.health = defender.health + 10
-        if (defender == "Jacques Chirac") {
-            console.warn(`${defender.name} à fait un jet parfait !! il invoque la république et récupère 10 points de vie`)
-        }
-        if (defender == "Batman") {
-            console.warn(`${defender.name} à fait un jet parfait !! il appelle la Batmobile et récupère 10 points de vie`)
-        }
-        if (defender == "Pikachu") {
-            console.warn(`${defender.name} à fait un jet parfait !! il invoque lance vive attaque et récupère 10 points de vie`)
-        }
-        if (defender == "Bob l'éponge") {
-            console.warn(`${defender.name} à fait un jet parfait !! il mange un Krusty Krab et récupère 10 points de vie`)
-        }
+        console.warn(`${defender.name} à fait un jet parfait !! ${defender.critique} et récupère 10 points de vie`)
+
     }
     if (attackScore > defenseScore) {
         defender.health -= attackScore;
